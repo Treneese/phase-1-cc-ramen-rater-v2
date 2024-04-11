@@ -104,7 +104,7 @@ fetch(objStoringUrls)
 // //   // //  // displayRamens > should fetch all ramens and display them as <img> inside #ramen-menu
 // //   // //   // Add code   that requests the data from the server to get all the ramen objects.
 //   const ul = document.getElementById('ramen-menu');
-//   const displayRamens = () => {
+  // const displayRamens = () => {
 //   ramenArr.forEach((ramenObj) => {
 //     const li = document.createElement('li')
 // const img = document.createElement('img')
@@ -126,20 +126,21 @@ fetch(objStoringUrls)
 
   
 // // // // Callbacks
-// const handleClick = (ramen) => {
-// // // //   // Add code  handleClick > should fire on a click on every img inside #ramen-menu
-// const img = ramenImages[0];
+const handleClick = (ramen) => {
+// // //   // Add code  handleClick > should fire on a click on every img inside #ramen-menu
+const img = ramenImages[0];
 
-//    expect(handleClickSpy).toHaveBeenCalled();
  
-//       fireEvent.click(img);//add DOM
- 
-//     const detailImg = document.querySelector("#ramen-detail > .detail-image");
+      fireEvent.click(img);//add DOM
 
+      expect(handleClickSpy).toHaveBeenCalled();
 
-// };
+    const detailImg = document.querySelector("#ramen-detail > .detail-image");
 
-// const addSubmitListener = () => {
+img.appendChild(click)
+};
+
+const addSubmitListener = () => {
 // // // //   // Add code
 // // // //   //handleSubmit > should add a new slider image when the submit button is clicked
 //  const ramenMenuDivAfter = document.querySelectorAll('#ramen-menu img');
@@ -147,7 +148,31 @@ fetch(objStoringUrls)
                                         
 //         expect(ramenMenuDivAfter[ramenMenuDivBefore.length].src).toBe(newRamen.image);
 //    };
-//   const ramenMenuDivAfter = document.querySelectorAll('#ramen-menu img');
+const submitButton = document.getElementById('submit-button');
+    210| 
+    211|         main(ramenForm)
+    212| 
+    213|         ramenFormName.value = newRamen.name;
+it  (".mainBanner").slick({
+  arrows: false    
+});
+( '.sidebar').on( 'click', '.switch', function(e) {
+  e.preventDefault();
+  var button = (this).attr("data-attr");
+  var slide = (".mainBanner .slide");
+    $(slide).each(function() {
+      ramenMenuArr.push($(this).attr("data-attr"));
+  });
+});
+//   cons, async () => {
+  const ramenForm = document.getElementById('new-ramen');
+     addSubmitListener(ramenForm)
+      
+      const newRamen = {
+        name: 'Labb',
+ ramenMenuDivAfter = document.querySelectorAll('#ramen-menu img')
+      }
+    }
 //       const img = ramenMenuDivAfter[ramenMenuDivBefore.length];
 //       img.addEventListener('click', (event) => {
 //          handleClick(newRamen, event);
@@ -155,21 +180,7 @@ fetch(objStoringUrls)
 //        it('should add a new slider image when the submit button is clicked', async () => {
 //         const ramenForm = document.getElementById('new-ramen');
 //         addSubmitListener(ramenForm)//not function
-//         const newRamen = {
-//           name: 'Labbs',
-//        const submitButton = document.getElementById('submit-button');
-//       main(ramenForm)// not function
-//        ramenFormName.value = newRamen.name;
-//        function logSubmit(event) {
-//         log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
-//         event.preventDefault();
-//       }
-      
-//       const form = document.getElementById("form");
-//       const log = document.getElementById("log");
-//       form.addEventListener("submit", logSubmit);
-//         }
-//         })
+//         fireEvent.click(img)
       
 
 
@@ -191,13 +202,13 @@ fetch(objStoringUrls)
 
 // // }
 
+document.addEventListener("DOMContentLoaded", main) {};
 
-
-// // const main = () => {
-// //   // Invoke displayRamens here
-// //   // Invoke addSubmitListener here
-// // }
-
+const main = () => {
+  return function(displayRamens,addSubmitListener)
+  // Invoke displayRamens here
+  // Invoke addSubmitListener here
+}
 // // main()
 
 // // // // Export functions for testing
